@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main()
+{
+   int *a,*b,c,d,sum;
+   a=&c;
+   b=&d;
+   printf("Enter nos");
+   scanf("%d%d",a,b);
+   sum=*a + *b;
+   printf("%d",sum);
+}
