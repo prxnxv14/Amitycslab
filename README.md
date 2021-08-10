@@ -38,4 +38,5 @@
 23.	Write a C program to check whether a number is Strong number or not.
 24.	Write a C program to print all Strong numbers between 1 to n.
 25.	Write a C program to print Fibonacci series up to n terms.
+26.	WAP to fing the largest of 5 numbers.
 
