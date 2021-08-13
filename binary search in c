@@ -2,32 +2,32 @@
 
 int main()
 {
-    int arr[100],i,key,n,f=0,l,mid;
-    printf(" enter no. of element\n");
+    int arr[100],i,key,n,f=0,l,middle;
+    printf(" enter no. of elements to be inserted \n");
     scanf("%d",&n);
-    printf(" enter array elements\n");
+    printf(" enter elements of the array\n");
     for( i=0;i<n;i++)
         {
             scanf("%d",&arr[i]);
         }
 
-    printf("enter element to search\n");
+    printf("enter element to search from the array\n");
     scanf("%d", &key);
     l= n-1;
     while(f<=l)
     {
-        mid=(f+l)/2;
-        if(arr[mid]==key)
+        middle=(f+l)/2;
+        if(arr[middle]==key)
         {
-            printf("element found at %d", mid+1);
+            printf("element location is %d", middle+1);
             break;
         }
-        else if(arr[mid]<key)
+        else if(arr[middle]<key)
         {
-            f=mid+1;
+            f=middle+1;
         }
         else
-            l=mid-1;
+            l=middle-1;
     }
     if(f>l)
         printf("element not found ");
